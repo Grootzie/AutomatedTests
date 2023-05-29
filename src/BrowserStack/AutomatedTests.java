@@ -27,7 +27,7 @@ public class AutomatedTests {
 	}
 
 	// sign in with email/password
-	@Test(priority = 2, dependsOnMethods = {"openWebsite"})
+	@Test(priority = 2, dependsOnMethods = {"openWebsite"}) 
 	public void signIn() {
 		// opening the "Sign in" tab
 		WebElement signInLink = driver.findElement(By.linkText("Sign in"));
