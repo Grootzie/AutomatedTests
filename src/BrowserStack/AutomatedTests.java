@@ -46,7 +46,7 @@ public class AutomatedTests {
 		passwordInput.sendKeys("654321");
 		submitSignInButton.click();
 	} 
-
+ 
 	// delete every existing article 
 	@Test(priority = 3, dependsOnMethods = {"signIn"})
 	public void deleteArticles () throws Exception { 
