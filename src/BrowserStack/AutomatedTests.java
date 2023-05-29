@@ -30,7 +30,7 @@ public class AutomatedTests {
 	@Test(priority = 2, dependsOnMethods = {"openWebsite"}) 
 	public void signIn() {
 		// opening the "Sign in" tab
-		WebElement signInLink = driver.findElement(By.linkText("Sign in"));
+		WebElement signInLink = driver.findElement(By.linkText("Sign in")); 
 		signInLink.click();
 
 		// get every field of the form when they are available, timeout after 3 secs
