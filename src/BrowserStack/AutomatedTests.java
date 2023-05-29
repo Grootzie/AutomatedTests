@@ -27,7 +27,7 @@ public class AutomatedTests {
 	}
 
 	// sign in with email/password
-	@Test(priority = 2, dependsOnMethods = {"openWebsite"}) 
+	@Test(priority = 2, dependsOnMethods = {"openWebsite"})
 	public void signIn() {
 		// opening the "Sign in" tab
 		WebElement signInLink = driver.findElement(By.linkText("Sign in"));
@@ -49,7 +49,7 @@ public class AutomatedTests {
 
 	// delete every existing article 
 	@Test(priority = 3, dependsOnMethods = {"signIn"})
-	public void deleteArticles () throws Exception {
+	public void deleteArticles () throws Exception { 
 		while (true) {
 			try {
 				// opening the profil of the user connected
