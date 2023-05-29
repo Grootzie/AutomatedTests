@@ -45,7 +45,7 @@ public class AutomatedTests {
 		emailInput.sendKeys("jeremy.desnous@gmail.com");
 		passwordInput.sendKeys("654321");
 		submitSignInButton.click();
-	}
+	} 
 
 	// delete every existing article 
 	@Test(priority = 3, dependsOnMethods = {"signIn"})
